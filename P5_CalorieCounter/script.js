@@ -39,6 +39,13 @@ function getCaloriesFromInputs(list){
       isError=true;
       return null;
     }
+    calories+= Number(currVal);
   }
+  return calories;
   
+}
+function calculateCalories(e) {
+  e.preventDefault();
+  isError=false;
+  let breakfastNumberInputs = document.querySelectorAll('#breakfast input[type=number]');
 }
